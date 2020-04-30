@@ -1,0 +1,108 @@
+@font-face {
+    font-family: fontnorm;
+    src: url(/fonts/RobotoMono-Regular.ttf);
+  }  
+  @font-face {
+    font-family: fontthin;
+    src: url(/fonts/RobotoMono-Thin.ttf);
+  }
+
+html *{
+    font-family: fontnorm;
+    outline: none
+}
+body{
+    margin:0px;
+}
+.maindiv{
+    height: 100vh;
+    width: 100%;
+    background-color: #121212;
+    text-align: center;
+}
+.upperthird{
+    height: 20%;
+    width: 100%;
+    position: relative;
+}
+.upperthird span{
+    color: #a7a4a4;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: fontthin;
+    font-size: 30px;
+}
+.middlethird{
+    height: 60vh;
+    width: 60vh;
+    max-width: 100%;
+    margin: auto;
+}
+.board{
+    /* background-color: #2e2d2d; */
+    position: relative;
+    height: 100%;
+    border: solid 0.5px #838181;
+}
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 11.1111111111%;
+}
+.box{
+    border: solid 0.5px #838181;
+    width: 11.1111111%;
+    color: #838;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box>input{
+    width: 80%;
+    height: 80%;
+    background-color: #121212;
+    border-width: 0px;
+    color: #838181;
+    font-size: 16px;
+    text-align: center;
+}
+.lowerthird{
+    height: 20%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.check, .solve{
+    font-size: 20px;
+    font-family: fontthin;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    background: #121212;
+    cursor: pointer;
+    -webkit-appearance: none;
+    height: fit-content;
+    -moz-appearance: none;
+    color: #a7a4a4;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.check:hover, .solve:hover{
+    background-color: #838;
+    -webkit-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+}
+.wrong{
+    color: #d12f2f!important;
+}
+.right{
+    color: #42bb3e!important;
+}
